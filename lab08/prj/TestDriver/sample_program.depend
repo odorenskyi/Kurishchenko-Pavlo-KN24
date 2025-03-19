@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1741855123 source:c:\bmtp-lab8-kurishchenko\lab8\prj\sample_program\main.cpp
+	<iostream>
+	<math.h>
+	"sample_module.h"
+
+1741855188 c:\bmtp-lab8-kurishchenko\lab8\prj\moduleskurishchenko\sample_module.h
+
