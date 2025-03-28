@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1743177906 source:c:\kurishchenko-pavlo-kn24\lab09\prj\kurishchenko_task\main.cpp
+	"sample_module.h"
+
+1743175634 c:\kurishchenko-pavlo-kn24\lab09\prj\moduleskurishchenko\sample_module.h
+	<iostream>
+	<math.h>
+	<bitset>
+

@@ -16,20 +16,73 @@ float s_calculator(float x, float y, float z)
     }
 }
 
-int ffun_cal_discount(float purc_sum){
+void ffun_cal_discount(float purc_sum){
     int discount = 0;
     if (purc_sum <= 0){
-        cout << "Enter the purchase amount\n";
-        return ffun_cal_discount(purc_sum);
+        cout << "Error: entered value less than one\n";
+        return;
     }
     if (purc_sum <= 100) discount = 5;
-    if (purc_sum <= 200) discount = 7;
-    if (purc_sum <= 300) discount = 9;
-    if (purc_sum <= 400) discount = 12;
-    if (purc_sum <= 500) discount = 15;
-    if (purc_sum <= 1000) discount = 20;
+    else if (purc_sum <= 200 && purc_sum > 100) discount = 7;
+    else if (purc_sum <= 300 && purc_sum > 200) discount = 9;
+    else if (purc_sum <= 400 && purc_sum > 300) discount = 12;
+    else if (purc_sum <= 500 && purc_sum > 400) discount = 15;
+    else if (purc_sum <= 1000 && purc_sum > 500) discount = 20;
     else discount = 25;
-    return discount;
+    cout << "Your discount in percent is " << discount << "%\n";
+    cout << "Your discount in hryvnia is " << discount * purc_sum / 100 << " uah\n";
+    cout << "Your purchase amount with discount is " << purc_sum - (discount * purc_sum / 100) << "\n";
+}
+
+void sfun_male_sizes(int uw_size){
+    switch (uw_size){
+        case 44:
+            cout << "Your size in International system: S\n";
+            cout << "Your size in UK system: 34\n";
+            cout << "Your size in French system: 2\n";
+            break;
+        case 46:
+            cout << "Your size in International system: M\n";
+            cout << "Your size in UK system: 36\n";
+            cout << "Your size in French system: 3\n";
+            break;
+        case 48:
+            cout << "Your size in International system: L\n";
+            cout << "Your size in UK system: 38\n";
+            cout << "Your size in French system: 4\n";
+            break;
+        case 50:
+            cout << "Your size in International system: XL\n";
+            cout << "Your size in UK system: 40\n";
+            cout << "Your size in French system: 5\n";
+            break;
+        case 52:
+            cout << "Your size in International system: XXL\n";
+            cout << "Your size in UK system: 42\n";
+            cout << "Your size in French system: 6\n";
+            break;
+        case 54:
+            cout << "Your size in International system: XXXL\n";
+            cout << "Your size in UK system: 44\n";
+            cout << "Your size in French system: -\n";
+            break;
+        default:
+            cout << "Error: entered a non-existing men's underwear size (44 - 54) in the Ukrainian system\n";
+            return;
+    }
+}
+
+void tfun_bin_count(int number){
+    if (number < 0 || number > 190550){
+        cout << "Error: value entered is out of range\n";
+        return;
+    }
+    bitset<18> binary(number);
+    bool D3 = binary[3];
+    int bin_amount = D3 ? (18 - binary.count()) : binary.count();
+    cout << "The third bit is " << (D3 ? "one" : "zero")
+         << ", then the number of " << (D3 ? "zeros" : "ones")
+         << " is " << bin_amount << "\n";
 }
 
 void Dev_info()

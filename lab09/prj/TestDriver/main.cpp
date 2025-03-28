@@ -1,11 +1,4 @@
-#include <iostream>
 #include "sample_module.h"
-
-using namespace std;
-
-void ffun_cal_discount(float purc_sum);
-void sfun_male_sizes(int uw_size);
-void tfun_bin_count(int number);
 
 int main()
 {
