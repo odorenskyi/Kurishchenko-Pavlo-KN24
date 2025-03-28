@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1743170644 source:c:\kurishchenko-pavlo-kn24\lab09\prj\testdriver\main.cpp
+	<iostream>
+	"sample_module.h"
+
+1742748734 c:\kurishchenko-pavlo-kn24\lab08\prj\sample_module.h
+
+1743162598 c:\kurishchenko-pavlo-kn24\lab08\prj\moduleskurishchenko\sample_module.h
+	<iostream>
+	<math.h>
+
