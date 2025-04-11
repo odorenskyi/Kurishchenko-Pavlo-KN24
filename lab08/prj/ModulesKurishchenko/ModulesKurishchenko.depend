@@ -12,3 +12,29 @@
 	<iostream>
 	<math.h>
 
+1743171716 source:c:\kurishchenko-pavlo-kn24\lab08\prj\moduleskurishchenko\mylib.cpp
+	"sample_module.h"
+
+1743175099 c:\kurishchenko-pavlo-kn24\lab08\prj\moduleskurishchenko\sample_module.h
+	<iostream>
+	<math.h>
+	<bitset>
+
+1744355521 source:c:\repositories\university\kurishchenko-pavlo-kn24\lab08\prj\moduleskurishchenko\mylib.cpp
+	"sample_module.h"
+
+1744355577 c:\repositories\university\kurishchenko-pavlo-kn24\lab08\prj\moduleskurishchenko\sample_module.h
+	<iostream>
+	<math.h>
+	<bitset>
+	<clocale>
+	<locale>
+	<windows.h>
+	<ctime>
+	<fstream>
+	<string>
+	<cctype>
+	<sstream>
+	<vector>
+	<codecvt>
+
