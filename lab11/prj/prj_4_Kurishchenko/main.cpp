@@ -1,9 +1,7 @@
-#include <iostream>
+#include "interface.h"
 
-using namespace std;
-
-int main()
-{
-    cout << "Hello World!" << endl;
+int main() {
+    system("chcp 65001 > nul");
+    handleUserChoice(); // Основна функція для вибору операцій
     return 0;
 }
