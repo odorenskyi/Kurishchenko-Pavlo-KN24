@@ -3,6 +3,10 @@ CONFIG += console c++17
 CONFIG -= app_bundle
 CONFIG -= qt
 
+# Назва вихідного .exe файлу
+TARGET = student_db
+DESTDIR = ../../../../Software/
+
 SOURCES += \
     main.cpp
 
