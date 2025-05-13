@@ -2,11 +2,14 @@
 #define MODULES_KURISHCHENKO_SHOWANDSEARCH_H
 
 #include "../struct_type_project_4.h"
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <string>
 
-class Modules_Kurishchenko_ShowAndSearch
-{
-public:
-    Modules_Kurishchenko_ShowAndSearch();
-};
+using namespace std;
+
+void printAllRecords();          // Вивести всю базу даних
+void searchRecordByLastName();   // Пошук за прізвищем
 
 #endif // MODULES_KURISHCHENKO_SHOWANDSEARCH_H
