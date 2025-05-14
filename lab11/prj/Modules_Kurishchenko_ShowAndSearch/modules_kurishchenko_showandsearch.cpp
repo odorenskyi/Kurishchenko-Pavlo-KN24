@@ -1,7 +1,5 @@
 #include "modules_kurishchenko_showandsearch.h"
 
-Node* head = nullptr;
-
 string printBlock(const string& title) { return "\n• " + title + " •\n"; }
 
 void printRecord(ostream* out, const Student& s) {
@@ -106,7 +104,7 @@ void searchRecordByLastName() {
     }
 
     if (!found) {
-        cout << "Студент з прізвищем \"" << lastName << "\" не знайдений.\n\n";
+        cerr << "Студент з прізвищем \"" << lastName << "\" не знайдений.\n\n";
     }
 }
 
