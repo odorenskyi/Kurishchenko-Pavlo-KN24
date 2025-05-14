@@ -70,4 +70,6 @@ struct Node { // Вузол однозв'язного списку
     Node(const Student& studentData) : data(studentData), next(nullptr) {} // Конструктор для зручності створення вузлів
 };
 
+extern Node* head;
+
 #endif // STRUCT_TYPE_PROJECT_4_H
