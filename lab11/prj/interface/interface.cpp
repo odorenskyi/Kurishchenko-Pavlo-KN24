@@ -54,8 +54,8 @@ void handleUserChoice() {
         case 1: printAllRecords(); break;
         case 2: addNewRecord(); break;
         case 3: searchRecordByLastName(); break;
-        case 4: removeRecordByLastName(); break;
-        case 0: exitProgram(); return;
+        case 4: removeRecordByFullName(); break;
+        case 0: //exitProgram(); return;
         default: cerr << "Невірний вибір. Спробуйте ще раз.\n";
         }
     }
