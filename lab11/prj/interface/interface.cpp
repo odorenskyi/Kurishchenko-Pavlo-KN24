@@ -47,6 +47,7 @@ int getUserChoice() {
 
 // Основна функція для вибору операцій
 void handleUserChoice() {
+    loadDatabaseFromFile("students_database.txt");
     showIntro();
     while (true) {
         showMainMenu();
@@ -55,7 +56,7 @@ void handleUserChoice() {
         case 2: addNewRecord(); break;
         case 3: searchRecordByLastName(); break;
         case 4: removeRecordByFullName(); break;
-        case 0: //exitProgram(); return;
+        case 0: exitProgram(); return;
         default: cerr << "Невірний вибір. Спробуйте ще раз.\n";
         }
     }
