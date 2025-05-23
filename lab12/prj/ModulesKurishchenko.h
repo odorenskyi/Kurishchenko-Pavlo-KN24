@@ -2,6 +2,12 @@
 #define MODULESKURISHCHENKO_H
 
 #include <cmath>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <filesystem>
+#include <cstdlib>
+using namespace std;
 
 class ClassLab12_Kurishchenko {
 private:
