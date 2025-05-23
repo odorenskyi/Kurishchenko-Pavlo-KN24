@@ -1,0 +1,4 @@
+Test Case ID,Action,Expected Result,Test Result
+1,setRadius(),6,passed
+2,setHeight(),9,passed
+3,getLateralSurfaceArea(),339.292,passed
