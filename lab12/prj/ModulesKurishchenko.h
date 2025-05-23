@@ -3,13 +3,13 @@
 
 #include <cmath>
 
-class Cylinder {
+class ClassLab12_Kurishchenko {
 private:
     double radius;
     double height;
 
 public:
-    Cylinder(double r, double h) : radius(r), height(h) {}
+    ClassLab12_Kurishchenko(double r, double h) : radius(r), height(h) {}
     double getRadius();
     double getHeight();
     void setRadius(double);
@@ -17,12 +17,12 @@ public:
     double getLateralSurfaceArea();
 };
 
-double Cylinder::getRadius(){ return radius; }
-double Cylinder::getHeight(){ return height; }
+double ClassLab12_Kurishchenko::getRadius(){ return radius; }
+double ClassLab12_Kurishchenko::getHeight(){ return height; }
 
-void Cylinder::setRadius(double r){ radius = r; }
-void Cylinder::setHeight(double h){ height = h; }
+void ClassLab12_Kurishchenko::setRadius(double r){ radius = r; }
+void ClassLab12_Kurishchenko::setHeight(double h){ height = h; }
 
-double Cylinder::getLateralSurfaceArea(){ return 2 * M_PI * radius * height; }
+double ClassLab12_Kurishchenko::getLateralSurfaceArea(){ return 2 * M_PI * radius * height; }
 
 #endif // MODULESKURISHCHENKO_H
